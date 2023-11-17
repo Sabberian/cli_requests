@@ -1,0 +1,14 @@
+{
+    "status_code": true,
+    "text_content": true,
+    "final_url": true,
+    "elapsed_time": true,
+    "output_file": "./data.txt",
+    "method": "POST",
+    "params": {
+        "hello": "world"
+    },
+    "data": {
+        "hello": "world"
+    }
+}
