@@ -5,7 +5,7 @@ HERE = pathlib.Path(__file__).parent
 
 README = (HERE / "README.md").read_text()
 
-with (HERE / "requirements.txt").open() as f:
+with open(HERE / "requirements.txt") as f:
     requirements = f.read().splitlines()
 
 setup(

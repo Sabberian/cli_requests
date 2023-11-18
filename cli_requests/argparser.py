@@ -11,7 +11,7 @@ def parse_arguments():
     parser.add_argument("-f", "--files", type=json.loads, help="Files to upload with the request (JSON format)")
     parser.add_argument("-x", "--proxies", type=json.loads, help="Proxies for the request (JSON format)")
     parser.add_argument("-d", "--data", type=json.loads, help="Data for the request (JSON format)")
-    parser.add_argument("--headers", type=json.loads, help="Headers for the request (JSON format)")
+    parser.add_argument("-s", "--headers", type=json.loads, help="Headers for the request (JSON format)")
     parser.add_argument("-t", "--timeout", type=float, help="Timeout for the request")
     parser.add_argument("-a", "--auth", type=tuple, help="Authentication credentials (username, password)")
     parser.add_argument("-c", "--cookies", type=json.loads, help="Cookies for the request (JSON format)")
