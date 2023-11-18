@@ -1,4 +1,4 @@
-from requester import Requester
+from .requester import Requester
 from .argparser import parse_arguments
 from .colorizer import colorize_info
 
