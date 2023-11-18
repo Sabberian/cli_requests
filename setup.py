@@ -5,12 +5,9 @@ HERE = pathlib.Path(__file__).parent
 
 README = (HERE / "README.md").read_text()
 
-with open(HERE / "requirements.txt") as f:
-    requirements = f.read().splitlines()
-
 setup(
     name="cli-requests",
-    version="0.1.1",
+    version="0.1.6",
     description="simple cli program to send requests",
     long_description=README,
     long_description_content_type="text/markdown",
@@ -29,5 +26,8 @@ setup(
     ],
     packages=find_packages(),
     include_package_data=True,
-    install_requires=requirements,
+    install_requires=[
+        'requests==2.31.0',
+        'colorama==0.4.6',
+    ],
 )

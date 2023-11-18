@@ -1,6 +1,7 @@
 from requester import Requester
-from argparser import parse_arguments
-from colorizer import colorize_info
+from .argparser import parse_arguments
+from .colorizer import colorize_info
+
 def main():
     args = parse_arguments()
 
@@ -62,5 +63,3 @@ def main():
     else:
         for item in output_data:
             print(f"{colorize_info(item[0]) if not nocolor else item[0]}:\n{item[1]}\n")
-
-main()

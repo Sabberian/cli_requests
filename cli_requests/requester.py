@@ -1,12 +1,7 @@
-import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-
 import requests
 from colorama import Fore
-from cli_requests.colorizer import colorize_error
-from cli_requests.exceptions import *
+from .colorizer import colorize_error
+from .exceptions import *
 
 
 class Requester:
