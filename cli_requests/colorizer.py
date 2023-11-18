@@ -1,4 +1,6 @@
-from colorama import Fore
+from colorama import Fore, init, Style
+
+init()
 
 def colorize(text: str, color: Fore = Fore.GREEN) -> str:
     """
@@ -8,8 +10,7 @@ def colorize(text: str, color: Fore = Fore.GREEN) -> str:
     :param color: Color to use (from the colorama module, e.g., Fore.GREEN).
     :return: Colorized text.
     """
-    reset_color = "\033[0m"
-    return f"{color}{text}{reset_color}"
+    return f"{color}{text}{Style.RESET_ALL}"
 
 def colorize_error(text: str) -> str:
     """
