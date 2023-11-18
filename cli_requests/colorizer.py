@@ -1,6 +1,7 @@
 from colorama import Fore, init, Style
-
-init()
+from colorama import just_fix_windows_console
+just_fix_windows_console()
+# init()
 
 def colorize(text: str, color: Fore = Fore.GREEN) -> str:
     """

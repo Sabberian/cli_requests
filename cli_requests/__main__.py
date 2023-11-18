@@ -1,8 +1,10 @@
 from .requester import Requester
 from .argparser import parse_arguments
 from .colorizer import colorize_info
+from colorama import init as colorama_init
 
 def main():
+    
     args = parse_arguments()
 
     requester = Requester()
@@ -55,6 +57,8 @@ def main():
         output_data.append(("Cookies", response.cookies))
 
     nocolor = args.nocolor
+    if not nocolor:
+        colorama_init()
     
     if args.output_file:
         with open(args.output_file, 'w') as output_file:
