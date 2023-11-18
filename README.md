@@ -1,4 +1,12 @@
-# Cli-Requests
+# <p align="center">Cli-Requests</p>
+<p align="center">
+  <a href="https://badge.fury.io/py/cli-requests">
+    <img src="https://badge.fury.io/py/cli-requests.svg" alt="PyPI version" height="18">
+  </a> 
+  <a href="https://opensource.org/license/mit/">
+    <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="LICENSE">
+  </a>
+</p>
 
 **Cli-Requests** is a command-line interface tool for simplifying HTTP requests. It allows you to effortlessly interact with APIs and websites directly from the terminal. This tool is designed to provide a seamless experience, enabling you to focus on making requests without the complexities of traditional tools.
 
