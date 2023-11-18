@@ -28,7 +28,7 @@ def main():
     if args.status_code:
         output_data.append(("Status Code", response.status_code))
 
-    if args.headers:
+    if args.headers_content:
         output_data.append(("Headers", response.headers))
 
     if args.text_content:
@@ -50,7 +50,7 @@ def main():
     if args.elapsed_time:
         output_data.append(("Elapsed Time", response.elapsed))
 
-    if args.cookies:
+    if args.cookies_content:
         output_data.append(("Cookies", response.cookies))
 
     nocolor = args.nocolor
