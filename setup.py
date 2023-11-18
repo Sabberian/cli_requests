@@ -10,7 +10,7 @@ with open(HERE / "requirements.txt") as f:
 
 setup(
     name="cli-requests",
-    version="0.1.0",
+    version="0.1.1",
     description="simple cli program to send requests",
     long_description=README,
     long_description_content_type="text/markdown",
